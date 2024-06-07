@@ -6,16 +6,17 @@ import { AiFillFilter } from "react-icons/ai";
 import { FaChevronDown } from "react-icons/fa";
 import Tavlur from "../Component/common/Tables2";
 import NavBar from "../Component/partials/NavBar";
+import Sidebar from "../Component/partials/sidebar";
 const Dashboard = () => {
   return (
     <div className="w-screen h-screen">
-     
+   
      <NavBar/>
     
       <div className="content mt-9 md:mt-16 lg:mt-20 grid grid-cols-1 md:grid-cols-2 gap-4 lg:grid-cols-3 pl-4 pr-4 lg:pl-4 lg:pr-4 md:pl-4 md:pr-4 ">
         <div
           className="Total-store border-2 border-grey  flex justify-center items-center shadow-xl rounded-md decoration-primary
-        w-full h-24 lg:w-full lg:h-40 md:w-full md:h-24  "
+        w-ful h-24 lg:w-full lg:h-40 md:w-full md:h-24  "
         >
           <span className="  bg-orange-300 flex  justify-center  items-center rounded-full h-14 text-center  pt-2 w-14 border-4 text-4xl pb-2 lg:border-8 lg:w-24 lg:h-24 lg:text-6xl md:w-16 md:h-16 mr-4">
             <LiaStoreAltSolid />

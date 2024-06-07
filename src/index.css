@@ -3,6 +3,8 @@
 @tailwind utilities;
 
 
+@import "@mantine/core/styles.css";
+
 .check{
   border: 2px solid red;
 }

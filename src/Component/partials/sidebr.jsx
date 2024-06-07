@@ -8,7 +8,6 @@ import { IoIosSearch } from "react-icons/io";
 
 const Sidebr = () => {
   
-  
   const menuItem = [
     {
       path: "/Dashboard",
@@ -30,7 +29,7 @@ const Sidebr = () => {
   return (
     <>
 
-     <div   className= " bg-[#DDD8F1] h-screen   w-64  lg:block hidden md:hidden">
+     <div   className= " bg-[#DDD8F1] h-screen   w-60  lg:block hidden md:block">
       <div className="sidebar  flex flex-col items-start justify-center mt-14">
         <div className="top-section">
           <h1   className="logo  text-title text-2xl ml-14">

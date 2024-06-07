@@ -7,9 +7,8 @@ import { useState } from "react";
 import { IoIosSearch } from "react-icons/io";
 import Sidebr from "./sidebr";
 
-const Sidebar = ({children}) => {
-  const[isOpen , setIsOpen] = useState(false);
-  const toggle = () => setIsOpen (!isOpen)
+const Sidebar = () => {
+ 
   const menuItem = [
     {
       path: "/Dashboard",
