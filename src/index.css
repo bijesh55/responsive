@@ -9,3 +9,14 @@
   border: 2px solid red;
 }
 
+.curveleft{
+  background-color: #DDD8F1;
+  border-top-left-radius: 30px !important;
+  border-bottom-left-radius: 30px !important;
+  }
+  .curveright{
+    background-color: #DDD8F1;
+    border-top-right-radius: 30px !important;
+    border-bottom-right-radius: 30px !important;
+    }
+

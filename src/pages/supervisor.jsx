@@ -32,27 +32,28 @@ const Supervisor = () => {
   return (
     <div className='h-screen w-screen '>
        <nav className="flex  justify-between ">
-        <h1 className="pt-14 pl-8 text-title font-semibold text-xl lg:text-2xl">
+        <h1 className="pt-16 pl-8 text-title font-semibold text-xl lg:text-2xl">
           Supervisor
         </h1>
         
         <div className="componend flex justify-evenly items-center mt-14  w-1/2 ml-24 ">
-        <div className="form-field   h-12 text-center justify-center item-center bg-primary border-solid rounded-full cursor-pointer ml-2  lg:block hidden">
-            <div className=" h-16  border-blue-40   text-center text-xl flex  pt-2"><span className='ml-8 text-2xl'><IoMdAdd /></span>
-             <h1 className='ml-8 cursor-pointer'>Add Supervisor</h1>
+        <div className="form-field   h-12 text-center justify-center item-center bg-primary border-solid rounded-full cursor-pointer ml-2  lg:block hidden md:block">
+            <div className=" h-24 lg:w-72 border-blue-40   text-center text-xl flex  pt-2"><span className='ml-8 text-2xl'><IoMdAdd /></span>
+             <h1 className='ml-8 cursor-pointer md:ml-4 md:w-40'>Add Supervisor</h1>
             </div>
             
           </div >
-          <div className="flex justify-evenly w-1/3 ">
-          <h className="text-3xl  bg-primary rounded-full item-center  justify-center cursor-pointer lg:w-16 text-center ">
+          <div className="flex justify-evenly w-1/3 lg:-mr-96 -mr-0  ">
+          <h className="text-3xl  bg-primary rounded-full item-center  justify-center cursor-pointer text-center lg:pt-
+          md:size-12 lg:pl-4 md:pt-2 md:pl-2 lg:size-14 lg:pt-3">
             <IoIosNotifications />
           </h>
-          <h className="text-2xl   bg-primary rounded-full size-16 mr-24 item-center  justify-center pt-4 cursor-pointer hidden lg:block ">
+          <h className="text-2xl   bg-primary rounded-full size-16  item-center  justify-center pt-4 pl-4 cursor-pointer hidden md:block lg:block md:size-12 md:pr-4 md:text-2xl lg:size-14">
             < IoPerson />
           </h>
           <p  onClick={open} aria-label="Toggle navigation"
             className='cursor-pointer'
-            ><GiHamburgerMenu size={"24"} className='ml-8  lg:hidden'/> {opened}</p>  </div>
+            ><GiHamburgerMenu size={"24"} className='ml-4  lg:hidden md:hidden'/> {opened}</p>  </div>
         </div>
           <div>
       <Drawer
@@ -68,6 +69,8 @@ const Supervisor = () => {
             </div>
             
           </div >
+          <div className='text-xl mt-4 ml-6 flex'>
+          < IoPerson className='rounded-full bg-primary text-4xl'/><h1 className='text-second font-semibold ml-4'>Profile</h1> </div>
           {menuItem.map((item, index) => (
           <a
             href={item.path}
@@ -76,11 +79,13 @@ const Supervisor = () => {
             activeclassName="active"
           >
           
-            <div className=" flex justify-center items-center  mt-8 -ml-12">
+            <div className=" flex justify-center items-center  mt-8 -ml-36">
               <div className="icon ">{item.icon}</div>
               <div    className="name  text-title font-semibold text-xl ml-4">{item.name}</div>
             </div>
+           
           </a>
+        
         ))}
       </Drawer>
       </div>

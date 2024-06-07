@@ -29,10 +29,10 @@ const Sidebr = () => {
   return (
     <>
 
-     <div   className= " bg-[#DDD8F1] h-screen   w-60  lg:block hidden md:block">
+     <div   className= " bg-[#DDD8F1] h-screen   w-60  lg:block hidden md:block md:w-62 lg:w-72">
       <div className="sidebar  flex flex-col items-start justify-center mt-14">
         <div className="top-section">
-          <h1   className="logo  text-title text-2xl ml-14">
+          <h1   className="logo  text-title text-2xl ml-8 md:text-base md:font-semibold md:mt-2 lg:text-2xl">
             Track Inventory
           </h1>
           
@@ -46,9 +46,9 @@ const Sidebr = () => {
             className="link"
             activeclassName="active"
           >
-            <div className=" flex justify-center items-center pl-16 mt-8">
+            <div className=" flex justify-center items-center  mt-8 md:pl-6">
               <div className="icon ">{item.icon}</div>
-              <div    className="name  text-title font-semibold text-xl ml-4">{item.name}</div>
+              <div    className="name  text-title font-semibold lg:text-xl lg:ml-4 mg:ml-2 md:text-base">{item.name}</div>
             </div>
           </a>
         ))}

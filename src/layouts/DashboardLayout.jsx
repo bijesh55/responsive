@@ -4,7 +4,7 @@ import Sidebr from "../Component/partials/sidebr";
 
 const DashboardLayout=()=>{
   return(
-    <main className="flex">
+    <main className="flex w-screen">
       <Sidebar/>
       <Outlet/>
 

@@ -31,9 +31,9 @@ const NavBar = () => {
   ];
   return (
     
-    <div>
+    <div className=''>
       
-      <nav className="flex items-center justify-between mt-12 px-2 w-full">
+      <nav className="flex items-center justify-between mt-12 px-2 ">
         <div className="w-1/3 text-second lg:ml-14 text-xl ml-4 font-semibold">
           <p className=" md:text-xl lg:text-2xl">Dashboard</p>
         </div>
@@ -42,18 +42,18 @@ const NavBar = () => {
           <div className="relative">
             <input
               type="text"
-              placeholder="search by date, product....."
-              className="w-24  border-[2px] border-primary rounded-full py-2 px-5 text-sm md:text-lg md:py-3 lg:py-4 md:px-10 lg:px-14 md:w-80 lg:w-96 lg-text-3xl hidden lg:block md:block"
+              placeholder="Search by date, product....."
+              className="w-24  border-[4px] border-primary rounded-full py-2 px-5 text-sm md:text-lg md:py-3 lg:py-4 md:px-10 lg:px-14 md:w-80 lg:w-96 lg-text-4xl hidden lg:block md:block"
             />
-            <span className="absolute top-1/2 right-2 -translate-y-1/2 bg-primary md:text-lg p-1 md:p-3 rounded-full  items-center justify-center hidden lg-block">
+            <span className="absolute top-1/2 right-2 -translate-y-1/2 bg-primary md:text-lg p-1 md:p-3 rounded-full  items-center justify-center hidden lg:block">
               <IoIosSearch />
             </span>
           </div>
           <div className="flex items-center justify-center gap-2 md:gap-8  lg:gap-12">
-            <span className=" bg-primary text-xl md:text-xl p-2 md:p-4 flex items-center justify-center rounded-full">
+            <span className=" bg-primary text-xl md:text-xl p-2 md:p-4 flex items-center justify-center rounded-full lg:text-3xl">
               <IoIosNotifications />
             </span>
-            <span className=" bg-primary text-xl md:text-xl p-2 md:p-4  items-center justify-center rounded-full hidden lg:block md:block">
+            <span className=" bg-primary text-xl md:text-xl p-2 md:p-4  items-center justify-center rounded-full hidden lg:block md:block lg:text-3xl">
               <IoPerson />
             </span>
             <p  onClick={open} aria-label="Toggle navigation"
@@ -76,10 +76,12 @@ const NavBar = () => {
               placeholder="search by date, product....."
               className="w-80  border-[2px] border-primary rounded-full py-2 px-5 text-sm  "
             />
-            <span className="absolute top-1/2 right-2 -translate-y-1/2 bg-primary md:text-lg p-1 md:p-3 rounded-full flex items-center justify-center mr-8">
+            <span className="absolute top-1/2 right-2 -translate-y-1/2 bg-primary md:text-lg p-1 md:p-3 rounded-full flex items-center justify-center mr-6">
               <IoIosSearch />
             </span>
           </div>
+          <div className='text-xl mt-4 ml-6 flex'>
+          < IoPerson className='rounded-full bg-primary text-4xl'/><h1 className='text-second font-semibold ml-4'>Profile</h1> </div>
           {menuItem.map((item, index) => (
           <a
             href={item.path}

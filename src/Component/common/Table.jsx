@@ -46,25 +46,27 @@ function Demo() {
   const rows = elements.map((element) => (
   
     <Table.Tr key={element.name}>
-      <Table.Td className="text-center">{element.position}</Table.Td>
-      <Table.Td className="text-center">{element.name}</Table.Td>
-      <Table.Td className="text-center">{element.Number}</Table.Td>
-      <Table.Td className="text-center">{element.Date}</Table.Td>
-      <Table.Td  className="text-center flex justify-center mt-7 text-3xl">{element.Action}</Table.Td>
+      <Table.Td className="lg:text-xl text-xs md:text-lg mt-4">{element.position}</Table.Td>
+      <Table.Td className="lg:text-xl text-xs  mt-4">{element.name}</Table.Td>
+      <Table.Td className="lg:text-xl text-xs  mt-4">{element.Number}</Table.Td>
+      <Table.Td className="lg:text-xl text-xs  mt-4">{element.Date}</Table.Td>
+      <Table.Td  className=" flex   lg:text-2xl text-lg mt-4">{element.Action}</Table.Td>
+      
     </Table.Tr>
   ));
 
   return (
-    <div className="w-full h-screen text-2xl ">
-    <Table className="bg-primary  w-11/12 h-1/2 item-center justify-center rounded-2xl mt-12 text-second  m-auto">
+    <div className="w-full h-screen text-4xl ">
+    <Table className="bg-primary  w-11/12 lg:h-1/2 h:1/2 item-center justify-center rounded-2xl mt-12 text-second  m-auto ">
       
-      <Table.Thead className=" h-20">
+      <Table.Thead className=" h-20 lg:text-xl text-xs md:text-xl">
         <Table.Tr>
           <Table.Th>S.N</Table.Th>
           <Table.Th>Supervisor name</Table.Th>
           <Table.Th>Phone</Table.Th>
           <Table.Th>Listed Data</Table.Th>
           <Table.Th>Action</Table.Th>
+          
         </Table.Tr>
       </Table.Thead>
      
